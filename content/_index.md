@@ -1,7 +1,10 @@
 ---
-title: "Hugo Apéro"
-subtitle: "A Hugo theme you'll want to hang out with"
-description: "Sit down, relax, and get to know Hugo Apéro. Built on top of Blogophonic, we wanted to create a polished Hugo theme with the right features for a true personal website. We set out to create a theme that is a pleasure to learn, and one that helps others get to know you better. It is more than a blog, with flexible custom layouts that help you introduce yourself online."
+title: "Vicky Xu"
+subtitle: "Programming, art, and anything between."
+description: "I'm a sophomore at Smith College, majoring in Computer Science and Data Science with a Museums Concentration. My passion lies in using code for social good, whether it's promoting equality for disabled individuals, addressing urgent environmental concerns, or enhancing accessibility accommodations. As the president of the Smith Data Science club, I actively work towards bringing resources to empower girls in these fields.
+\n 
+Furthermore, my diverse interests, including calligraphy, art history, and a museum internship, have significantly influenced my life and aspirations. I view artwork as a profound reflection of its era, encapsulating culture, education, and aesthetic appreciation. This perspective fuels my desire to utilize machine learning as a tool for investigating the evolution of artwork, exploring its connections and migrations across different periods, and discovering the fascinating convergence of museum and technology."
+
 images:
   - img/revoir.jpg
 image_left: true

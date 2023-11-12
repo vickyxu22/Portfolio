@@ -7,9 +7,9 @@ description: "I'm a sophomore at Smith College, majoring in Computer Science and
 Furthermore, my diverse interests, including calligraphy, art history, and a museum internship, have significantly influenced my life and aspirations. I view artwork as a profound reflection of its era, encapsulating culture, education, and aesthetic appreciation. This perspective fuels my desire to utilize machine learning as a tool for investigating the evolution of artwork, exploring its connections and migrations across different periods, and discovering the fascinating convergence of museum and technology."
 
 images:
-  - img/revoir.jpg
+  - headshot.jpg
 image_left: true
-text_align_left: false
+text_align_left: true
 show_social_links: true # specify social accounts in site config
 show_action_link: true
 action_link: /about

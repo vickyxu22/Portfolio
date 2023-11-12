@@ -13,19 +13,22 @@
         <div class="order-2 {{ if $page.Params.sidebar_left }}ml5-l order-2-l{{ else }}mr4-l order-1-l{{ end }} w-two-thirds-l w-100-ns pt5">
           {{ if $page.Params.show_header }}
             {{ with .Title}}
-              <h2 class="about-main f2 fw7 tl">{{ . | markdownify }}</h2>
+              <h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ . | markdownify }}</h1>
             {{ end }}
+
           {{ else }}
             {{ with .Title }}
             <h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ . | markdownify }}</h1>
             {{ end }}
           {{ end }}
+
           {{ if .Params.show_intro }}
             <div class="pv3 f4 measure lh-copy dib">{{ .Params.intro | markdownify }}</div>
+          {{ with .Title }}
+            <h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ . | markdownify }}</h1>
+            {{ end }}
           {{ end }}
-          {{ if gt $page.Params.number_featured 0 }}
-          {{ partial "shared/summary-li" . }}
-          {{ end }}
+
           {{ if .Params.show_outro }}
             <div class="pt3 measure-wide lh-copy cf">{{ .Params.outro | markdownify }}</div>
           {{ end }}

@@ -17,7 +17,7 @@ layout: single-sidebar
 links:
 - icon: door-open
   icon_pack: fas
-  name: website
+  name: poster
   url: https://allisonhorst.github.io/palmerpenguins/
 - icon: github
   icon_pack: fab

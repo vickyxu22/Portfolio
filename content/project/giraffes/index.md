@@ -1,125 +1,100 @@
 ---
-title: "Tachyons for Style"
-subtitle: "A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle that always moves faster than light."
-excerpt: "Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It’s a design system that provides very small (which means fast) CSS modules that you can use in your HTML."
-date: 2019-07-03
-author: "Eric Anderson"
+title: "Examining Environmental Barriers for Disabled Employees in Different Industries and Work Spaces"
+date: 2023-10-31
 draft: false
-tags:
-  - hugo-site
-categories:
-  - Theme Features
-  - R
-  - package
 # layout options: single or single-sidebar
 layout: single
+links:
+- icon: door-open
+  icon_pack: fas
+  name: poster
+  url: https://drive.google.com/file/d/1mCvss8qqlgyX-4loG-heIDoX5xHUYp07/view?usp=sharing
+- icon: google
+  icon_pack: fab
+  name: speech
+  url: https://drive.google.com/file/d/119hG3R4WkLfq5ElBFt_dYktpG5TQGI1K/view?usp=sharing
+- icon: github
+  icon_pack: fab
+  name: code
+  url: https://github.com/disability-inclusion-analytics-lab/environmental_barriers_diff_ind
 ---
+### Background:
 
-![Tachyons Logo Script](tachyons-logo-script.png)
+The employment outcomes of disabled people remain worse compared to those without disabilities in the United States. The intersectionality of disability, race, and gender may further negatively impact people’s employment outcomes (Crudden et al., 2023; Shierholz, 2020; Wu & Schimmel Hyde, 2019). The present study specifically focuses on the economic environmental barriers disabled employees as well as employees in the intersectionality groups face in different industries and work spaces.
 
-## [Tachyons](http://tachyons.io) is a design system that allows you to design gorgeous interfaces in the browser with little effort.
+### Hypotheses:
 
----
+Income varies for certain industries (H1), company types (H2) and occupations (H3) for disabled people and non-disabled people, controlling for other personal characteristics (such as race, gender).
 
-### Because Speed
+### Data Source:
 
-Building this static site generator theme was the first time I used an Atomic
-(or Functional) CSS system like Tachyons. It's a design system that provides
-very small (which means fast) CSS modules that you can use in your HTML. So,
-rather than writing every line of CSS, you apply the style you need as you write
-your HTML with easy to understand shorthand class names. This makes for a very
-powerful way to style, in the browser, or while building a static site like this
-one – since you can see every change with every save. **It's a joy to use.**
-
-In using this theme for your next static website project, you won't need to know
-anything about Tachyons ... so, don't freak out. Even though I used it to style
-the theme, you won't need to change a thing. BUT, if you do want to play around
-with it, you can make massive changes very easily. Just familiarize yourself
-with the [clear documentation on the design system](http://tachyons.io/docs/).
-Once you dive in, you'll recognize all the classes I'm using in the markup.
-
-### BYOTachyons
-
-One of the best features of Tachyons is the exhaustive [component
-library](https://www.tachyonstemplates.com/components/?selectedKind=AboutPages&selectedStory=AboutUs&full=0&down=0&left=1&panelRight=0)
-contributed by the community. All those components are built to work with the
-Tachyons classes, so they will work in this theme too! You can copy/paste
-components in order to quickly block out a page, then fill in your content.
-
-### Taste the Rainbow
-
-We've leveraged the [accessible color
-combinations](http://tachyons.io/docs/themes/skins/) included with Tachyons to
-offer an easy way for you to setup your site using your favorite colors. In the
-site configuration file (`config.toml`), there is a full set of color parameters
-giving you control over the theme color scheme. For an option like `siteBgColor`
-for example, you can just type one of the predefined color names from Tachyons
-and save the file. You can totally customize the theme colors within minutes of
-installing the theme.
-
-```toml
-# basic color options: use only color names as shown in the
-# "Color Palette" section of http://tachyons.io/docs/themes/skins/
-siteBgColor = "near-white"
-sidebarBgColor = "light-gray"
-headingColor = "black"
-textColor = "dark-gray"
-sidebarTextColor = "mid-gray"
-bodyLinkColor = "blue"
-navLinkColor = "near-black"
-sidebarLinkColor = "near-black"
-footerTextColor = "silver"
-buttonTextColor = "near-white"
-buttonBgColor = "black"
-buttonHoverTextColor = "white"
-buttonHoverBgColor = "blue"
-borderColor = "moon-gray"
-```
-
-### Dig Deeper
-
-Let's say you have a style guide to follow and `washed-blue` just won't cut the
-mustard. We built Blogophonic for you, too. There is a bypass of these
-predefined colors built in, you just need to dig a little deeper. In the theme
-assets, locate and open the main SCSS file (`/assets/main.scss`). After the
-crazy looking variables you probably don't recognize and directly following the
-Tachyons import (`@import 'tachyons';`) you'll see a comment that looks just
-like this:
+Current Population Survey (CPS), jointly administered by the Bureau of the Census and the Bureau of Labor Statistics.
+Filtered To Employed civilian individuals aged between 16 and 64 years old. Recategorized Industry, Company Type, and Occupation into broader categories and converted Disability Status, Sex, and Race into binary variables.
+The retained dataset contained 66,320 observations.
 
 ```scss
-// uncomment the import below to activate custom-colors
-// add your own colors at the top of the imported file
-// @import 'custom-colors';
+tab1 <- tab |> 
+  #filter(Type_of_person == 2) |> # filter to PRPERTYP = 2 (Adult civilian household member)
+  filter(Disability_Status != -1) |>
+  filter(Age >= 16 & Age <= 64) |> # filter to working-age population
+  mutate(Employment_Status = 
+           case_when(Major_Labor_Force %in% c(1:2) ~ 0, # Employed
+                     Major_Labor_Force %in% c(3:7) ~ 1  # Unemployed
+  )) |>
+  mutate(Disability_Status = 
+           case_when(Disability_Status == 2 ~ 0, # Non-disabled
+                     Disability_Status == 1 ~ 1 # Disabled
+  )) |>
+  mutate(Sex = case_when(Sex == 1 ~ 0, # Male
+                         Sex == 2 ~ 1 # Female
+  )) |>
+  mutate(Race = case_when(Race == 1 ~ 0, # White-only
+                          Race %in% c(2:26) ~ 1 # POC
+  )) |>
+  mutate(Marital_Status = 
+           case_when(Marital_Status %in% c(1:3) ~ 1, # Married
+                     Marital_Status %in% c(4:7) ~ 0  # Not married
+  )) |>
+  mutate(Age = case_when((Age >= 18 & Age <= 24) ~ 1,
+                         (Age >= 25 & Age <= 34) ~ 2, 
+                         (Age >= 35 & Age <= 44) ~ 0, 
+                         (Age >= 45 & Age <= 54) ~ 3,
+                         (Age >= 55 & Age <= 64) ~ 4
+  )) |>
+  mutate(Full_Part_time_status = 
+           case_when(Full_Part_time_status %in% c(2:5) ~ 0, # Full time
+                     Full_Part_time_status %in% c(6:10) ~ 1, # Part time
+                     Full_Part_time_status %in% c(1, 11, 12) ~ 2 # Unemployed
+  )) |>
+  dplyr::select(-c(Major_Labor_Force:ERN_YN), -Type_of_person)
+
+tab1<-tab1|>
+  filter(Employment_Status == 0)
 ```
 
-Once you uncomment the `custom-colors` import, it will look like this:
+### Methods:
+
+The `raov()` function, short for "Robust Analysis of Variance," serves as a valuable tool when conducting analysis of variance (ANOVA) on linear models in situations where traditional ANOVA assumptions, such as the normality of residuals and homoscedasticity, are violated within the dataset.
+Employing the `raov()` function to construct models for each hypothesis ensures a comprehensive modeling approach, including the evaluation of main effects and interactions. The outcomes yield robust ANOVA tables, enhancing the reliability of statistical analysis in the presence of non-standard data characteristics.
 
 ```scss
-// uncomment the import below to activate custom-colors
-// add your own colors at the top of the imported file
-@import "custom-colors";
-```
+tab1_industry_few <- tab1_industry |>
+  mutate(Industry = case_when(Industry %in% c(1:2) ~ 0, # "Agriculture, forestry,fishing, and hunting", "Mining, quarrying, and oil and gas extraction"
+                              Industry %in% c(3:4) ~ 1, # "Construction", "Manufacturing"
+                              Industry %in% c(5:6,8:14) ~ 2, # Service Industry
+                              Industry == 7 ~ 3 # "Information"
+  ))
+  
+hypo2_1_ranova_1 <- tab1_industry_few |>
+  dplyr::select(Disability_Status, Race, Sex, Year_Income_in_2021, Industry)|>
+  rename(income=Year_Income_in_2021)
 
-Save that change, and now the color options in the `config.toml` are no longer
-active – they've been bypassed. To customize the colors, locate and open the
-`custom-colors` file found in the theme assets (`/assets/custom-colors.scss`).
-At the top of that file, you'll find a whole new set of variables for all the
-same color options, but this time you get to assign your own HEX codes.
+head(hypo2_1_ranova_1)
 
-```scss
-// set your custom colors here
-$siteBgColorCustom: #e3e3da;
-$sidebarBgColorCustom: #dbdbd2;
-$textColorCustom: #666260;
-$sidebarTextColorCustom: #666260;
-$headingColorCustom: #103742;
-$bodyLinkColorCustom: #c4001a;
-$navLinkColorCustom: #c4001a;
-$sidebarLinkColorCustom: #c4001a;
-$footerTextColorCustom: #918f8d;
-$buttonTextColorCustom: #f7f7f4;
-$buttonHoverTextColorCustom: #f9f9f8;
-$buttonBgColorCustom: #103742;
-$buttonHoverBgColorCustom: #c4001a;
-$borderColorCustom: #c4beb9;
+fit2_1 <- raov(income ~ Disability_Status + Sex + Race + Industry, data = hypo2_1_ranova)
+fit2_1$table
 ```
+### Results:
+
+Our results showed that disabled individuals had statistically significant lower earnings compared to their non-disabled counterparts. RANOVA identified that this significant difference excited across industries, company types, and occupations. For H3, the interaction of occupation, disability status, and race on the income scores were statistically significant.
+For future research, to provide a comprehensive picture of environmental barriers in different industries and work spaces, we plan to examine employment status and full-part-time status. Thus we can learn more about the factors in order to reduce the gaps between disabled employees and non-disabled employees and further develop policies.

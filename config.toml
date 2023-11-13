@@ -111,30 +111,21 @@ enableEmoji = true
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
-    title = "Blog"
-    url = "/blog/"
-    weight = 2
-  [[menu.header]]
-    name = "Projects"
+    name = "Programming Projects"
     title = "Project Portfolio"
     url = "/project/"
+    weight = 2
+  [[menu.header]]
+    name = "Art Collection"
+    title = "Art collection"
+    url = "https://xufsh0222.wixsite.com/website"
     weight = 3
-  [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
+    [[menu.header]]
+    name = "CV"
+    title = "CV"
+    url = "https://drive.google.com/file/d/1t9-xWjJReNHc_0J_j4Vw48dQCG1gfJaq/view?usp=sharing"
     weight = 4
-  [[menu.header]]
-    name = "A collection"
-    title = "A collection"
-    url = "/collection/"
-    weight = 5
-  [[menu.header]]
-    name = "Elements"
-    title = "Element Page"
-    url = "/elements/"
-    weight = 6
+
 
   # Configure footer
   [[menu.footer]]
@@ -142,16 +133,6 @@ enableEmoji = true
     title = "License"
     url = "/license/"
     weight = 1
-  [[menu.footer]]
-    name = "Contact"
-    title = "Contact form"
-    url = "/contact/"
-    weight = 2
-  [[menu.footer]]
-    name = "Contributors"
-    title = "Contributors"
-    url = "/contributors/"
-    weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/
 [privacy]

@@ -97,6 +97,10 @@ enableEmoji = true
       icon      = "spotify" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://open.spotify.com/show/1XNRFeVs3gOGnfzRT1c51T?si=5e1842d9b2034264"
+  [[params.social]]
+      icon      = "wix" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://xufsh0222.wixsite.com/website"
 
 [taxonomies]
   category = "categories"

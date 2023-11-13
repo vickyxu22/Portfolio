@@ -1,7 +1,7 @@
 ---
 title: "Examining Environmental Barriers for Disabled Employees in Different Industries and Work Spaces"
 date: 2023-10-31
-draft: false
+excerpt: "Disabled individuals had statistically significant lower earnings compared to their non-disabled counterparts. RANOVA identified that this significant difference excited across industries, company types, and occupations."
 # layout options: single or single-sidebar
 layout: single
 links:

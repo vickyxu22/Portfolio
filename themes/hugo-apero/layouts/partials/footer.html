@@ -12,11 +12,6 @@
       {{ partial "shared/social-links.html" . }}
     </div>
     {{ end }}
-    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
-      {{ range site.Menus.footer }}
-      <a class="dib pv1 ph2 link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-      {{ end }}
-    </div>
   </nav>
   {{ with site.Params.math }}
     {{ partial "shared/math-preprocess.html" }}

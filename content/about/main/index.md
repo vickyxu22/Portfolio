@@ -15,7 +15,7 @@ intro: |
   
   Immersing myself in calligraphy, art history, and serving as a database intern at the [SCMA](https://scma.smith.edu/) has profoundly shaped my life and aspirations. Art, being a profound reflection of its respective era, encapsulates the essence of culture, education, and aesthetic appreciation, fueling my desire to utilize machine learning as a tool for investigating the connections, evolution, and migrations of artwork across different periods, as well as applying database skills to enhance artwork archiving in institutions. 
  
-  In a recent project, I utilized Python to analyze Sotheby's auction records of artworks and automated the process of archiving SCMA invoice documents into the Mimsy database. 
+  In recent projects, I utilized Python to analyze Sotheby's auction records of artworks and automated the process of archiving SCMA invoice documents into the Mimsy database. 
   
   Furthermore, my curiosity extends to the realms of computer graphics, where I aim to explore the intersection of technology and artistic expression.
   

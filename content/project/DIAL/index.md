@@ -22,6 +22,8 @@ links:
 
 The employment outcomes of disabled people remain worse compared to those without disabilities in the United States. The intersectionality of disability, race, and gender may further negatively impact people’s employment outcomes (Crudden et al., 2023; Shierholz, 2020; Wu & Schimmel Hyde, 2019). The present study specifically focuses on the economic environmental barriers disabled employees as well as employees in the intersectionality groups face in different industries and work spaces.
 
+![Alt Text](poster.jpg)
+
 ### Hypotheses:
 
 Income varies for certain industries (H1), company types (H2) and occupations (H3) for disabled people and non-disabled people, controlling for other personal characteristics (such as race, gender).

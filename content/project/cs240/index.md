@@ -18,6 +18,8 @@ links:
 
 The project replicates two showrooms from the "Fashioned by Sargent" exhibition at the Museum of Fine Arts, Boston. The setting and layout precisely mirror those of the original exhibition, and the size of the paintings matches their actual, unframed dimensions. The goal is to provide users with an immersive online experience of this remarkable exhibition. By encountering Sargent's portraits, the exhibition prompts us to rethink the art of image-making and whether a portrayal is truthful, aspirational, or purely imaginative. These reflections are particularly intriguing within the context of our digital age, dominated by social media, video conferencing, and the age of selfies.
 
+![Alt Text](preview.jpg)
+
 ### Keyboard Control:
 
 The user can utilize the keyboard to control the character in a third-person perspective.
@@ -67,3 +69,5 @@ One portraits on the back wall:
 The exit door is located on the back wall of the second room, marking the end of the tour.
 
 If you wish to revisit the first room, you can either exit the building and re-enter through the first room's entry or simply click the refresh button, which will return you to the starting point in the first room.
+
+![Alt Text](detail.jpg)

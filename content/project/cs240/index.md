@@ -1,7 +1,7 @@
 ---
 title: "An Interactive Simulation of the Fashioned by Sargent Exhibition"
 date: 2023-12-10
-excerpt: "The project replicates two showrooms from the *Fashioned by Sargent* exhibition at the Museum of Fine Arts, Boston. The setting and layout precisely mirror those of the original exhibition. The goal is to provide users with an immersive online experience of this remarkable exhibition."
+excerpt: "The project replicates two showrooms from the *Fashioned by Sargent* exhibition at the Museum of Fine Arts, Boston. The setting and layout precisely mirror those of the original exhibition. "
 # layout options: single or single-sidebar
 layout: single
 links:

@@ -92,7 +92,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.linkedin.com/in/vicky-x-b82324251/"
+      url       = "https://www.linkedin.com/in/vicky-xu-b82324251/"
   [[params.social]]
       icon      = "spotify" # icon name without the 'fa-'
       icon_pack = "fab"
@@ -127,7 +127,7 @@ enableEmoji = true
     [[menu.header]]
     name = "CV"
     title = "CV"
-    url = "https://drive.google.com/file/d/1hNu1FxhXNE9lDudl06_96gHu4axjx74k/view?usp=sharing"
+    url = "https://drive.google.com/file/d/148hY9tZtzgLQ_5ldLR6fTufM3Qa_hdOb/view?usp=sharing"
     weight = 4
 
 

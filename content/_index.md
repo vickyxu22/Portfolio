@@ -1,8 +1,7 @@
 ---
 title: "Vicky Xu"
 subtitle: "Programming, art, and anything between."
-description: "I'm a sophomore at Smith College, majoring in Computer Science and Data Science with a Museums Concentration. My passion lies in using code for social good, whether it's promoting equality for disabled individuals, addressing urgent environmental concerns, or enhancing accessibility accommodations. As the president of the Smith Data Science club, I actively work towards bringing resources to empower girls in these fields.
-
+description: "I'm a rising junior studying Computer Science at Northwestern University. My passion lies in using code for social good, whether it's promoting equality for disabled individuals, addressing urgent environmental concerns, or enhancing accessibility accommodations. 
 
 Furthermore, my diverse interests, including calligraphy, art history, and a museum internship, have significantly influenced my life and aspirations. I view artwork as a profound reflection of its era, encapsulating culture, education, and aesthetic appreciation. This perspective fuels my desire to utilize machine learning as a tool for investigating the evolution of artwork, exploring its connections and migrations across different periods, and discovering the fascinating convergence of museum and technology."
 
